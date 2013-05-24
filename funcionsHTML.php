@@ -187,24 +187,24 @@ function columnadreta(){
 						<div id="related-products" class="box-content">
 							<div class="related-item">
 								<div class="title">B-Move Black Shark 2000dpi Verde</div>
-								<div class="image"><a href="#" title="Ver mౠinformaci򬠾<img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
-								<div class="price">12.95 ?<br /></div>
-								<a class="add button" href="#" title="A𠣩r al carro"><span>A𠣩r al carro</span></a>
-								<a class="info button" href="#" title="Ver mౠinformaci򬠾<span>+info</span></a>
+								<div class="image"><a href="#" title="Ver m&aacute;informaci&oacute;n"><img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
+								<div class="price">12.95 &euro;<br /></div>
+								<a class="add button" href="#" title="A&ntilde;adir al carro"><span>A&ntilde;adir al carro</span></a>
+								<a class="info button" href="#" title="Ver m&aacute;s informaci&oacute;n"><span>+info</span></a>
 							</div>
 							<div class="related-item">
 								<div class="title">B-Move Black Shark 2000dpi Verde</div>
-								<div class="image"><a href="#" title="Ver mౠinformaci򬠾<img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
-								<div class="price">12.95 ?<br /></div>
-								<a class="add button" href="#" title="A𠣩r al carro"><span>A𠣩r al carro</span></a>
-								<a class="info button" href="#" title="Ver mౠinformaci򬠾<span>+info</span></a>
+								<div class="image"><a href="#" title="Ver m&aacute;informaci&oacute;n"><img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
+								<div class="price">12.95 &euro;<br /></div>
+								<a class="add button" href="#" title="A&ntilde;adir al carro"><span>A&ntilde;adir al carro</span></a>
+								<a class="info button" href="#" title="Ver m&aacute;s informaci&oacute;n"><span>+info</span></a>
 							</div>
 							<div class="related-item">
 								<div class="title">B-Move Black Shark 2000dpi Verde</div>
-								<div class="image"><a href="#" title="Ver mౠinformaci򬠾<img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
-								<div class="price">12.95 ?<br /></div>
-								<a class="add button" href="#" title="A𠣩r al carro"><span>A𠣩r al carro</span></a>
-								<a class="info button" href="#" title="Ver mౠinformaci򬠾<span>+info</span></a>
+								<div class="image"><a href="#" title="Ver m&aacute;informaci&oacute;n"><img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
+								<div class="price">12.95 &euro;<br /></div>
+								<a class="add button" href="#" title="A&ntilde;adir al carro"><span>A&ntilde;adir al carro</span></a>
+								<a class="info button" href="#" title="Ver m&aacute;s informaci&oacute;n"><span>+info</span></a>
 							</div>
 						</div>
 					</div>

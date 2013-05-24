@@ -49,6 +49,12 @@ centercol();
 cospaginatanca();
 //peu
 peu();
-jquery();
+
+/* jQuerys */
+jQuery();
+jQDesplegable(0);
+jQLogin();
+jQueryTanca();
+
 peutanca();
 ?>

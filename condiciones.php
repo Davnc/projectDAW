@@ -100,7 +100,7 @@ peu();
 
 /* jQuerys */
 jQuery();
-jQDesplegable($categoria);
+jQDesplegable(0);
 jQLogin();
 jQTabs();
 jQueryTanca();

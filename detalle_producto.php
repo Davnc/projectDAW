@@ -83,7 +83,7 @@ if($resultat3=$connexio->query($sql3)){
 		$id=$fila3[0];
 		$url=$fila3[0].$fila3[2];
 		
-		echo '<a href="#"><img src="images/gallery/'.$url.'" width="200" alt="'.$nomProd.'" /></a>';
+		echo '<a rel="prettyPhoto[gal]" href="images/gallery/'.$url.'"><img src="images/gallery/'.$url.'" width="200" alt="'.$nomProd.'" /></a>';
 	}
 	echo '</div>';
 }
@@ -134,7 +134,16 @@ centercoltanca();
 columnadreta();
 cospagtanca();
 cospaginabtanca();
+
 peu();
-jquery();
+
+/*jQuerys */
+jQuery();
+prettyPhoto();
+jQLogin();
+jQDesplegable($categoria);
+jQSlides();
+jQueryTanca();
+
 peutanca();
 ?>
