@@ -14,7 +14,7 @@ function menuVertical(){
 	
 /* CATEGORIES PRINCIPALS */
 $connexio=connectar();
-$sqlcatpare='SELECT * FROM categoriapare';
+$sqlcatpare='SELECT * FROM categoriapare ORDER BY id_catpare';
 if($rescategpare=$connexio->query($sqlcatpare)){
 
 echo '<div class="box-content"><ul id="dropdown-menu" class="first-level">';

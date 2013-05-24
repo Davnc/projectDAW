@@ -30,6 +30,13 @@ centercol();
 <?php
 cospaginatanca();
 peu();
-jquery();
+
+/* jQuerys */
+jQuery();
+prettyPhoto();
+jQLogin();
+jQDesplegable(0);
+jQueryTanca();
+
 peutanca();
 ?>

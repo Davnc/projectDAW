@@ -215,7 +215,7 @@ if($resultat=$connexio->query($sql))
 		
 		
 		echo '<li class="item">
-			<div class="title">'.$fila2[2].'</div>
+			<div class="title">'.$nomprod.'</div>
 			<div class="image"><a href="./detalle_producto.php?c='.$categoria.'&p='.$idProd.'" title="Ver más información"><img src="images/gallery/'.$fila3[0].$fila3[2].'" /></a></div>
 			<div class="price">'.$preu.' €<br /></div>
 			<a class="add button" href="#" title="Añadir al carro"><span>Añadir al carro</span></a>
@@ -268,6 +268,13 @@ echo $pagination;
 cospaginatanca();
 //peu
 peu();
-jquery();
+
+/* jQuerys */
+jQuery();
+prettyPhoto();
+jQLogin();
+jQDesplegable($categoria);
+jQueryTanca();
+
 peutanca();
 ?>

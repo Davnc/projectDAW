@@ -97,6 +97,13 @@ centercol();
 cospaginatanca();
 //peu
 peu();
-jquery();
+
+/* jQuerys */
+jQuery();
+jQDesplegable($categoria);
+jQLogin();
+jQTabs();
+jQueryTanca();
+
 peutanca();
 ?>

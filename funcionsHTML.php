@@ -187,24 +187,24 @@ function columnadreta(){
 						<div id="related-products" class="box-content">
 							<div class="related-item">
 								<div class="title">B-Move Black Shark 2000dpi Verde</div>
-								<div class="image"><a href="#" title="Ver más información"><img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
+								<div class="image"><a href="#" title="Ver mà± informaciò¬ ¾<img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
 								<div class="price">12.95 ?<br /></div>
-								<a class="add button" href="#" title="Añadir al carro"><span>Añadir al carro</span></a>
-								<a class="info button" href="#" title="Ver más información"><span>+info</span></a>
+								<a class="add button" href="#" title="Að £©r al carro"><span>Að £©r al carro</span></a>
+								<a class="info button" href="#" title="Ver mà± informaciò¬ ¾<span>+info</span></a>
 							</div>
 							<div class="related-item">
 								<div class="title">B-Move Black Shark 2000dpi Verde</div>
-								<div class="image"><a href="#" title="Ver más información"><img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
+								<div class="image"><a href="#" title="Ver mà± informaciò¬ ¾<img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
 								<div class="price">12.95 ?<br /></div>
-								<a class="add button" href="#" title="Añadir al carro"><span>Añadir al carro</span></a>
-								<a class="info button" href="#" title="Ver más información"><span>+info</span></a>
+								<a class="add button" href="#" title="Að £©r al carro"><span>Að £©r al carro</span></a>
+								<a class="info button" href="#" title="Ver mà± informaciò¬ ¾<span>+info</span></a>
 							</div>
 							<div class="related-item">
 								<div class="title">B-Move Black Shark 2000dpi Verde</div>
-								<div class="image"><a href="#" title="Ver más información"><img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
+								<div class="image"><a href="#" title="Ver mà± informaciò¬ ¾<img src="images/gallery/B-Move-Black-Shark-verde.jpg" /></a></div>
 								<div class="price">12.95 ?<br /></div>
-								<a class="add button" href="#" title="Añadir al carro"><span>Añadir al carro</span></a>
-								<a class="info button" href="#" title="Ver más información"><span>+info</span></a>
+								<a class="add button" href="#" title="Að £©r al carro"><span>Að £©r al carro</span></a>
+								<a class="info button" href="#" title="Ver mà± informaciò¬ ¾<span>+info</span></a>
 							</div>
 						</div>
 					</div>
@@ -256,10 +256,14 @@ function peu(){
 <?php
 }
 
-function jquery(){
+
+
+
+function jQuery(){
 ?>
 <script type="text/javascript">
 	$(document).ready(function () {
+		/*
 	  $("a[rel^='prettyPhoto']").prettyPhoto({
 	  	social_tools:false
 	  });
@@ -277,12 +281,74 @@ function jquery(){
 			fadeSpeed: 500,
 			generateNextPrev: false,
 			generatePagination: false
-		});
+		});*/
 		//$("#conditions").tabs({ show: { effect: "blind", duration: 400 } });
-	});
-</script>
 <?php	
 }
+
+function jQueryTanca(){
+?>
+	});
+</script>
+<?php
+}
+
+function prettyPhoto(){
+?>
+	  $("a[rel^='prettyPhoto']").prettyPhoto({
+	  	social_tools:false
+	  });
+<?php
+}
+
+function jQLogin(){
+?>
+		$("#user-access .login-btn a").click(function() {
+			$("#user-access .login-btn").toggleClass("active");
+			$("#login-dropdown").toggle( "blind", 100 );
+		});
+<?php
+}
+
+function jQSlides(){
+?>
+		$('#products').slides({
+			preload: true,
+			preloadImage: 'images/loading.gif',
+			effect: 'slide, fade',
+			crossfade: true,
+			slideSpeed: 350,
+			fadeSpeed: 500,
+			generateNextPrev: false,
+			generatePagination: false
+		});
+<?php
+}
+
+
+function jQDesplegable($item){
+	if($item<=0){
+		$item="false";
+	}
+	else{
+		$item=$item-1;
+	}
+?>
+		$("#dropdown-menu").accordion({
+			heightStyle: "content",
+			collapsible: true,
+			active: <?php echo $item ?>,
+			icons: { "header": "arrow-right", "headerSelected": "arrow-down" }
+		});
+<?php
+}
+
+function jQTabs(){
+?>
+		$("#conditions").tabs({ show: { effect: "blind", duration: 400 } });
+<?php
+}
+
 
 function peutanca(){
 ?>
