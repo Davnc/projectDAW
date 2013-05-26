@@ -13,6 +13,8 @@ function capsalera(){
 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" >
 <link rel="stylesheet" type="text/css" href="css/main.css" media="screen" />
 <link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" title="prettyPhoto main stylesheet" charset="utf-8" />
+<!-- Set iconos-font vectoriales -->
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-1.8.3.js"></script>
 <script type="text/javascript" src="js/jquery-ui-1.9.2.custom.js"></script>
 <script src="js/jquery.prettyPhoto.js" type="text/javascript" charset="utf-8"></script>
@@ -57,10 +59,12 @@ function capsalera(){
 				</div>
 				<div id="rightheader">
 					<div id="searchbox">
-						<form name="searchbox" action="#">
+						<form name="searchbox" method="GET" action="./buscar.php">
 							<label for="cercar" class="ocult"><?php echo lang('SEARCH'); ?></label>
-							<input id="search" class="box" type="text" value="<?php echo lang('SEARCH'); ?>..." onblur="if(this.value=='') this.value='<?php echo lang('SEARCH'); ?>...';" onfocus="if(this.value=='<?php echo lang('SEARCH'); ?>...') this.value='';" />
-							<input name="cercar" type="image" class="search" src="images/search.gif" />
+							<input id="search" name="query" class="box" type="text" />
+							<!--<input id="search" name="query" class="box" type="text" value="<?php echo lang('SEARCH'); ?>..." onblur="if(this.value=='') this.value='<?php echo lang('SEARCH'); ?>...';" onfocus="if(this.value=='<?php echo lang('SEARCH'); ?>...') this.value='';" />-->
+							<button type="submit" name="cercar" type="image" class="search"></button>
+							<!--<input name="cercar" type="image" class="search" src="images/search.gif" />-->
 						</form>
 					</div>
 					<div id="social-links">

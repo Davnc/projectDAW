@@ -305,36 +305,56 @@ blockquote{
 	background: #246491;
 	padding: 5px;
 	float:right;
+	position:relative;
+}
+
+#searchbox form:after{
+	border-style: solid solid solid none;
+	border-color: transparent #246491 transparent;
+	position: absolute;
+	content: '';
+	border-width: 7px 7px 7px 0;
+	top: 13px;
+	right: 67px;
 }
 
 #searchbox form{
 	background: white;
 	border: solid 1px #246491;
-	padding: 3px 10px 2px 10px;
-	height:23px;
+	padding:0px;
+	height:28px;
 }
 
 #searchbox .box{
 	border: none;
 	background: white;
-	width: 200px;
+	width:180px;
 	color: #ABABAB;
-	padding: 2px;
+	padding:6px 10px 4px 10px;
 	margin:0px;
 }
 
 #searchbox .box:focus{outline:none;}
 
+#searchbox .search:before{
+	content:'\f002';
+}
+
 #searchbox .search{
-	margin-top: 3px;
-	margin-right: 0;
+	margin:0px;
 	vertical-align: top;
 	background: none;
-	padding: 4px 10px 5px 10px;
+	padding: 7px 8px 5px 12px;
 	border: none;
-	color: #666;
+	color: #FFF;
 	display: inline-block;
 	overflow: visible;
+	background-color:#246491;
+	cursor:pointer;
+	width:61px;
+	height:28px;
+	font-family:FontAwesome;
+	-webkit-font-smoothing: antialiased;
 }
 
 
