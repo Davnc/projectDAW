@@ -2,43 +2,26 @@
 include_once("funcionsHTML.php");
 include_once("funcions.php");
 
-/*
-if(!isset($_GET['c']) && $_GET['c']==''){
-	header("Location: index.php");
-}
-else{
-	$categoria=$_GET['c'];
-}
-*/
-$categoria=$_GET['c'];
-$producto=$_GET['p'];
 
-/* INFORMACIO DE LA CATEGORIA PARE */
-$connexio=connectar();
-$sqlcatpare='SELECT * FROM categoriapare WHERE id_catpare='.$categoria;
-if($rescategpare=$connexio->query($sqlcatpare)){
-	while($reg=mysqli_fetch_array($rescategpare)){
-		$nomCat=$reg[1];
-	}
-}
-else{
-	echo "error a la connexio o consulta";
-}
-desconnectar($connexio);
+$idproducto=$_GET['p'];
+
 
 /* INFORMACIO DEL PRODUCTE */
 $connexio=connectar();
-$sqlproducte='SELECT * FROM producte WHERE id_producte='.$producto;
+$sqlproducte='SELECT * FROM producte WHERE id_producte='.$idproducto;
 if($resprod=$connexio->query($sqlproducte)){
 	while($fila1=mysqli_fetch_array($resprod)){
 		$idProd=$fila1[0];
 		$preu=$fila1[1];
+		$idcategoria=$fila1[7];
+		$idsubcategoria=$fila1[8];
 	}
 }
 else{
 	echo "error a la connexio o consulta";
 }
 desconnectar($connexio);
+
 
 /* DESCRIPCIO DEL PRODUCTE */
 $connexio=connectar();
@@ -55,13 +38,50 @@ else{
 desconnectar($connexio);
 
 
+/* INFORMACIO DE LA CATEGORIA */
+$connexio=connectar();
+$sqlcat='SELECT * FROM categoria WHERE id_cat='.$idcategoria;
+if($rescateg=$connexio->query($sqlcat)){
+	while($reg1=mysqli_fetch_array($rescateg)){
+		$nomcat=$reg1[1];
+		$idcatpare=$reg1[2];
+	}
+}
+else{
+	echo "error a la connexio o consulta";
+}
+desconnectar($connexio);
+
+
+
+/* INFORMACIO DE LA CATEGORIA PARE */
+$connexio=connectar();
+$sqlcatpare='SELECT nom FROM categoriapare WHERE id_catpare='.$idcatpare;
+if($rescategpare=$connexio->query($sqlcatpare)){
+	while($reg2=mysqli_fetch_array($rescategpare)){
+		$nomcatpare=$reg2[0];
+	}
+}
+else{
+	echo "error a la connexio o consulta";
+}
+desconnectar($connexio);
+
+
+
+
 
 capsalera();
-menu($categoria);
+menu($idcatpare);
 cospag();
 ?>	
-				<div id="breadcrums">Est&aacute;s aqu&iacute;: <a href="./" title="Volver al Inicio">Inicio</a> &raquo; <a href="./productos.php?c=<?php echo $categoria;?>" title="<?php echo $nomCat?>"><?php echo $nomCat;?></a> &raquo; <?php echo $nomProd;?></div>
+				<div id="breadcrums"><?php echo lang("YOU_ARE_HERE"); ?>: 
+					<a href="./" title="<?php echo lang("BACK_TO_INDEX"); ?>"><?php echo lang("HOME"); ?></a> &raquo; 
+					<a href="./productos.php?c=<?php echo $idcatpare; ?>" title="<?php echo $nomcatpare; ?>"><?php echo $nomcatpare; ?></a> &raquo; 
+					<a href="./productos.php?c=<?php echo $idcatpare; ?>&cat=<?php echo $idcategoria; ?>" title="<?php echo $nomcat; ?>"><?php echo $nomcat; ?></a> &raquo; 
+					<?php echo $nomProd; ?></div>
 <?php
+carrito();
 //Columna Esquerra
 desplegable();
 banner();
@@ -80,7 +100,6 @@ $sql3='SELECT * FROM imatges WHERE fk_producte='.$idProd;
 $connexio=connectar();
 if($resultat3=$connexio->query($sql3)){
 	while($fila3=mysqli_fetch_array($resultat3)){
-		$id=$fila3[0];
 		$url=$fila3[0].$fila3[2];
 		
 		echo '<a rel="prettyPhoto[gal]" href="images/gallery/'.$url.'"><img src="images/gallery/'.$url.'" width="200" alt="'.$nomProd.'" /></a>';
@@ -96,7 +115,6 @@ $connexio=connectar();
 if($resultat3=$connexio->query($sql3)){
 	echo '<ul class="pagination">';
 	while($fila3=mysqli_fetch_array($resultat3)){
-		$id=$fila3[0];
 		$url=$fila3[0].$fila3[2];
 		
 		echo '<li><a href="#"><img src="images/gallery/'.$url.'" width="50" alt="'.$nomProd.'"></a></li>';
@@ -113,9 +131,11 @@ desconnectar($connexio);
 								<div class="price">
 									<span><?php echo $preu;?> &euro;</span><br />*IVA incluido
 								</div>
-								<form id="actions-cart">
-									<input type="text" class="quantity field" name="quantity" value="1" size="3" maxlength="3" onkeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;" />
-									<a href="#" class="button add"><span>Añadir al carro</span></a>
+								<form id="actions-cart" method="GET" action="accio.php">
+									<input type="hidden" name="mode" value="add_item" />
+									<input type="hidden" name="item" value="<?php echo $idproducto; ?>" />
+									<input type="text" class="quantity field" name="quantitat" value="1" size="3" maxlength="3" onkeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;" />
+									<input type="submit" class="button add" value="<?php echo lang("ADD_TO_CART"); ?>" />
 								</form>
 								<div class="clear"></div>
 							</div>
@@ -123,7 +143,7 @@ desconnectar($connexio);
 					</div>
 
 					<div id="description" class="box">
-						<h3><span>Descripción del producto</span></h3>
+						<h3><span><?php echo lang("PRODUCT_DESC"); ?></span></h3>
 						<div class="box-content">
 						<?php echo $descripcio;?>
 					</div>
@@ -141,7 +161,7 @@ peu();
 jQuery();
 prettyPhoto();
 jQLogin();
-jQDesplegable($categoria);
+jQDesplegable($idcatpare);
 jQSlides();
 jQueryTanca();
 

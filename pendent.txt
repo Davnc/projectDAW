@@ -1,15 +1,30 @@
-LOGIN -> David
-REGISTRE -> David
-DETALL_PRODUCTE -> JAVI
-PRODUCTES -> PAGINACIO -> JAVI *revisar bug de titols i imatges dels productes als llistats
-DESPLEGABLE ESQUERRA -> JAVI -> Marcar element segons la seccio
-DISSENYAR BANNERS
-PRODUCTES RELACIONATS
-CERCADOR -> FUNCIONAMENT
-CERCADOR -> PAGINA DE RESULTATS
-IDIOMES ->
-PERFIL USUARI
-CARRITO
-FINALITZAR COMPRA
+[ ] LOGIN -> David
+[ ] REGISTRE -> David
+[X] DETALL_PRODUCTE -> JAVI
+[X] PRODUCTES -> PAGINACIO -> JAVI *revisar bug de titols i imatges dels productes als llistats
+[X] DESPLEGABLE ESQUERRA -> JAVI -> Marcar element segons la seccio
+[X] DISSENYAR BANNERS -> JAVI
+[ ] PORTADA -> OFERTES DESTACADES
+[ ] PORTADA -> MES VENUT
+[ ] PRODUCTES RELACIONATS
+[ ] CERCADOR -> FUNCIONAMENT
+[ ] CERCADOR -> PAGINA DE RESULTATS
+[X] IDIOMES -> JAVI
+[ ] PERFIL USUARI
+[ ] CARRITO -> JAVI
+[ ] FINALITZAR COMPRA
+[ ] CONTACTO -> Formulario envio con AJAX
 
-ADMINISTRACIO
+
+[ ] ADMINISTRACIO
+
+
+Secundaris
+
+[ ]Pàgina de Facebook
+[ ]Pàgina de Twitter
+[ ]RSS
+
+
+/*!!!!!!!!! DUBTES !!!!!!!!!!!*/
+A la taula carrito, data_hora_inici i data_hora_fi no hauria de ser datetime enlloc de time?

@@ -8,8 +8,9 @@ capsalera();
 menu(0);
 cospag();
 ?>
-<div id="breadcrums">Est&aacute;s aqu&iacute;: <a href="./index.html" title="Volver al Inicio">Inicio</a> &raquo; Condiciones de uso del servicio</div>
+<div id="breadcrums"><?php echo lang('YOU_ARE_HERE'); ?>: <a href="./" title="<?php echo lang('BACK_TO_INDEX'); ?>"><?php echo lang('HOME'); ?></a> &raquo; <?php echo lang('TERMS_OF_USE'); ?></div>
 <?php
+carrito();
 //desplegable dels productes
 desplegable();
 //banner
@@ -17,7 +18,7 @@ banner();
 //cos
 centercol();
 ?>
-						<h2><span>Condiciones de uso del servicio</span></h2>
+						<h2><span><?php echo lang('TERMS_OF_USE_TITLE'); ?></span></h2>
 						<div id="conditions" class="box-content">
 							<div id="tabs">
 							  <ul>

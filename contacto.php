@@ -8,8 +8,9 @@ capsalera();
 menu(0);
 cospag();
 ?>
-<div id="breadcrums">Est&aacute;s aqu&iacute;: <a href="./index.html" title="Volver al Inicio">Inicio</a> &raquo; Contacto</div>
+<div id="breadcrums"><?php echo lang('YOU_ARE_HERE'); ?>: <a href="./" title="<?php echo lang('BACK_TO_INDEX'); ?>"><?php echo lang('HOME'); ?></a> &raquo; <?php echo lang('CONTACT'); ?></div>
 <?php
+carrito();
 //desplegable dels productes
 desplegable();
 //banner

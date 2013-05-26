@@ -7,6 +7,10 @@ capsalera();
 //menu principal
 menu(0);
 cospag();
+?>
+<div id="breadcrums"><?php echo lang('YOU_ARE_HERE'); ?>: <?php echo lang('HOME'); ?></div>
+<?php
+carrito();
 //desplegable dels productes
 desplegable();
 //banner
@@ -15,7 +19,7 @@ banner();
 centercol();
 ?>
 
-						<h2><span>Ofertas Destacadas</span></h2>
+						<h2><span><?php echo lang('OUTSTANDING_OFFERS'); ?></span></h2>
 						<div id="product-list" class="box-content">
 						<!--
 							<ul>
@@ -47,7 +51,7 @@ centercol();
 					</div>
 					
 					<div id="description" class="box">
-						<h3><span>Lo más vendido</span></h3>
+						<h3><span><?php echo lang('MOST_SOLD'); ?></span></h3>
 						<div id="product-list" class="box-content">
 						<!--
 							<ul>
@@ -81,6 +85,12 @@ centercol();
 cospaginatanca();
 //peu
 peu();
-jquery();
+
+/* jQuerys */
+jQuery();
+jQLogin();
+jQDesplegable(0);
+jQueryTanca();
+
 peutanca();
 ?>
