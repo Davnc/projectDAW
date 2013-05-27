@@ -10,7 +10,7 @@ cospag();
 ?>
 <div id="breadcrums"><?php echo lang('YOU_ARE_HERE'); ?>: <a href="./" title="<?php echo lang('BACK_TO_INDEX'); ?>"><?php echo lang('HOME'); ?></a> &raquo; <?php echo lang('ABOUT_US'); ?></div>
 <?php
-carrito();
+botonera();
 //desplegable dels productes
 desplegable();
 //banner

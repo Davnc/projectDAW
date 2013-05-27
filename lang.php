@@ -30,6 +30,7 @@ function lang($phrase){
         'INFO_NOT_AVAILABLE' => 'Informaci&oacute;n no disponible',
         'MANUFACTURERS' => 'Fabricantes',
         'MOST_SOLD' => 'Lo m&aacute;s vendido',
+        'MY_CONFIGURATION' => 'Mi configuraci&oacute;n',
         'NEXT' => 'Siguiente',
         'OUTSTANDING_OFFERS' => 'Ofertas destacadas',
         'PASSWORD' => 'Clave',
@@ -41,6 +42,7 @@ function lang($phrase){
         'PRODUCT_DESC' => 'Descripci&oacute;n del producto',
         'PRODUCTS' => 'Productos',
         'PRODUCTS_NOT_AVAILABLE_FOR_THIS_CATEGORY' => 'Actualmente no hay productos disponibles para esta categor&iacute;a.',
+        'PROFILE' => 'Perfil',
 				'QUANTITY' => 'Cantidad',
         'RELATED_PRODUCTS' => 'Productos relacionados',
         'SEARCH' => 'Buscar',
@@ -52,6 +54,7 @@ function lang($phrase){
         'TOTAL' => 'Total',
         'VIEW_CART' => 'Ver el carrito',
         'VIEW_MORE_INFO' => 'Ver m&aacute;s informaci&oacute;n',
+        'VIEW_PROFILE' => 'Ver perfil',
         'YOU_ARE_HERE' => 'Est&aacute;s aqu&iacute;',
     );
     return $lang[$phrase];
@@ -81,6 +84,7 @@ function lang($phrase){
 				'INFO_NOT_AVAILABLE' => 'Informaci&oacute; no disponible',
 				'MANUFACTURERS' => 'Fabricants',
 				'MOST_SOLD' => 'El m&eacute;s venut',
+        'MY_CONFIGURATION' => 'La meva configuraci&oacute;',
 				'NEXT' => 'Seg&uuml;ent',
 				'OUTSTANDING_OFFERS' => 'Ofertes destacades',
 				'PASSWORD' => 'Clau',
@@ -92,6 +96,7 @@ function lang($phrase){
 				'PRODUCT_DESC' => 'Descripci&oacute; del producte',
 				'PRODUCTS' => 'Productes',
 				'PRODUCTS_NOT_AVAILABLE_FOR_THIS_CATEGORY' => 'Actualment no hi ha productes disponibles per a aquesta categoria.',
+        'PROFILE' => 'Perfil',
 				'QUANTITY' => 'Quantitat',
 				'RELATED_PRODUCTS' => 'Productes relacionats',
 				'SEARCH' => 'Cercar',
@@ -103,6 +108,7 @@ function lang($phrase){
         'TOTAL' => 'Total',
 				'VIEW_CART' => 'Veure el carrito',
 				'VIEW_MORE_INFO' => 'Veure m&eacute;s informaci&oacute;',
+        'VIEW_PROFILE' => 'Veure perfil',
 				'YOU_ARE_HERE' => 'Est&agrave;s aqu&iacute;',
     );
     return $lang[$phrase];
@@ -132,6 +138,7 @@ function lang($phrase){
 				'INFO_NOT_AVAILABLE' => 'Information not available',
 				'MANUFACTURERS' => 'Manufacturers',
 				'MOST_SOLD' => 'Most sold',
+        'MY_CONFIGURATION' => 'My configuration',
 				'NEXT' => 'Next',
 				'OUTSTANDING_OFFERS' => 'Outstanding offers',
 				'PASSWORD' => 'Password',
@@ -143,6 +150,7 @@ function lang($phrase){
 				'PRODUCT_DESC' => 'Product description',
 				'PRODUCTS' => 'Products',
 				'PRODUCTS_NOT_AVAILABLE_FOR_THIS_CATEGORY' => 'There are no products available for this category.',
+        'PROFILE' => 'Profile',
 				'QUANTITY' => 'Quantity',
 				'RELATED_PRODUCTS' => 'Related products',
 				'SEARCH' => 'Search',
@@ -154,6 +162,7 @@ function lang($phrase){
         'TOTAL' => 'Total',
 				'VIEW_CART' => 'View cart',
 				'VIEW_MORE_INFO' => 'View more information',
+        'VIEW_PROFILE' => 'View profile',
 				'YOU_ARE_HERE' => 'You are here',
     );
     return $lang[$phrase];

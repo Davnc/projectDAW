@@ -107,7 +107,7 @@ blockquote{
 }
 
 #header, #header-top{
-	width:970px;
+	width:990px;
 	margin:0px auto;
 }
 
@@ -746,6 +746,10 @@ blockquote{
 
 .delete span{
 	background: url('../images/cancel.png') no-repeat scroll left center;
+}
+
+.options span{
+	background: url('../images/cog.png') no-repeat scroll center center;
 }
 
 /* Peu */

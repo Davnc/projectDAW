@@ -21,7 +21,7 @@ cospag();
 ?>
 <div id="breadcrums"><?php echo lang("YOU_ARE_HERE"); ?>: <a href="./" title="<?php echo lang("BACK_TO_INDEX"); ?>"><?php echo lang("HOME"); ?></a> &raquo; <?php echo lang("CART"); ?></div>
 <?php
-carrito();
+botonera();
 desplegable();
 banner();
 centercol();

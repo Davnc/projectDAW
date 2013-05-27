@@ -22,7 +22,7 @@ function capsalera(){
 </head>
 <body>
 	<!-- Modo debug  -->
-	<a href="accio.php?mode=flushsession">Debug</a>
+	<a class="button delete" href="accio.php?mode=flushsession"><span>debug</span></a>
 	
 	<div id="container">
 		<!-- Precapcalera -->
@@ -348,9 +348,10 @@ function peutanca(){
 
 
 
-function carrito(){
+function botonera(){
 ?>
 <div id="botoneraCart"><a class="carrito button" href="./carrito.php" title="<?php echo lang('VIEW_CART'); ?>"><span>(<?php echo totalItemsCarro(); ?>)</span></a></div>
+<div id="botoneraCart"><a class="options button" href="./perfil.php" title="<?php echo lang('MY_CONFIGURATION'); ?>"><span>&nbsp;</span></a></div>
 <div class="clear"></div>
 <?php
 }

@@ -81,7 +81,7 @@ cospag();
 					<a href="./productos.php?c=<?php echo $idcatpare; ?>&cat=<?php echo $idcategoria; ?>" title="<?php echo $nomcat; ?>"><?php echo $nomcat; ?></a> &raquo; 
 					<?php echo $nomProd; ?></div>
 <?php
-carrito();
+botonera();
 //Columna Esquerra
 desplegable();
 banner();
