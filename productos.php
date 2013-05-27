@@ -149,7 +149,7 @@ if($resultat=$connexio->query($sql))
 			$sortidaProductes .='<li class="item">
 				<div class="title">'.$nomprod.'</div>
 				<div class="image"><a href="./detalle_producto.php?p='.$idProd.'" title="Ver más información"><img src="images/gallery/'.$url.'" /></a></div>
-				<div class="price">'.$preu.' €<br /></div>
+				<div class="price">'.$preu.' &euro;<br /></div>
 				<a class="add button" href="./accio.php?mode=add_item&item='.$idProd.'" title="'.lang("ADD_TO_CART").'"><span>'.lang("ADD_TO_CART").'</span></a>
 				<a class="info button" href="./detalle_producto.php?p='.$idProd.'" title="'.lang("VIEW_MORE_INFO").'"><span>+info</span></a>
 			</li>';
