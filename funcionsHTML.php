@@ -21,6 +21,9 @@ function capsalera(){
 <script type="text/javascript" src="js/slides.min.jquery.js"></script>
 </head>
 <body>
+	<!-- Modo debug  -->
+	<a href="accio.php?mode=flushsession">Debug</a>
+	
 	<div id="container">
 		<!-- Precapcalera -->
 		<div id="header-wrapper-top">

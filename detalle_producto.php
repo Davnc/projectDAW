@@ -135,7 +135,7 @@ desconnectar($connexio);
 									<input type="hidden" name="mode" value="add_item" />
 									<input type="hidden" name="item" value="<?php echo $idproducto; ?>" />
 									<input type="text" class="quantity field" name="quantitat" value="1" size="3" maxlength="3" onkeypress="if (event.keyCode < 48 || event.keyCode > 57) event.returnValue = false;" />
-									<input type="submit" class="button add" value="<?php echo lang("ADD_TO_CART"); ?>" />
+									<button type="submit" class="button add"><span><?php echo lang("ADD_TO_CART"); ?></span></button>
 								</form>
 								<div class="clear"></div>
 							</div>

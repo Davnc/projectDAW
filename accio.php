@@ -112,4 +112,15 @@ elseif($mode=="idioma"){
 	header('Location: ' . $_SERVER['HTTP_REFERER']); //tornem a la pagina on estavem
 }
 
+
+
+
+
+
+
+
+elseif($mode=="flushsession"){
+	session_destroy();
+	header('Location: ' . $_SERVER['HTTP_REFERER']); //tornem a la pagina on estavem
+}
 ?>

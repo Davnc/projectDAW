@@ -145,4 +145,5 @@ function listProductsCarro(){
 <?php
 		}
 }
+
 ?>
